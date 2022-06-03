@@ -3,6 +3,7 @@
 html {
     box-sizing: border-box;
     font-size: 1rem;
+    cursor: url(../img/cursor.png), auto;
 }
 
 *,
@@ -52,13 +53,12 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 5.5rem;
+    gap: 1.5rem;
     background-color: var(--black);
 }
 
 .app--title {
     font-size: 5rem;
-    margin-bottom: 5.5rem;
     font-weight: 100;
     color: var(--white);
     text-shadow: 0 0 7px var(--white),
@@ -77,6 +77,8 @@ body {
 
 .app--input-container {
     margin-bottom: 1.25rem;
+    width: fit-content;
+    margin: 0 auto;
 }
 
 .app--input-container:after {
@@ -86,7 +88,7 @@ body {
     height: 1px;
     background-color: var(--green);
     margin-bottom: 1.25rem;
-    transition: cubic-bezier(0.19, 1, 0.22, 1) 0.1s;
+    transition: cubic-bezier(0.19, 1, 0.22, 1) 0.35s;
 }
 
 #binary-input {
@@ -96,7 +98,12 @@ body {
     font-size: 2rem;
     color: var(--green);
     position: relative;
+    padding: 1.2rem;
 
+}
+
+#binary-input:hover {
+    cursor: url(../img/cursor_full.png), auto;
 }
 
 #binary-input:focus-visible {
@@ -121,7 +128,7 @@ body {
 
 .app--container {
     text-align: center;
-    padding: 5rem 2rem;
+    padding: 2.5rem 2rem;
 }
 
 .app--output-container {
