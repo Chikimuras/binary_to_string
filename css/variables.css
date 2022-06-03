@@ -1,0 +1,22 @@
+﻿:root {
+    /**
+    * Fonts
+    */
+    --font-family: 'Quicksand', sans-serif;
+    --font-family-monospace: 'Anonymous Pro', monospace;
+
+
+    /**
+     * Colors
+     */
+    --black: hsl(240, 100%, 3%);
+    --white: hsl(122.39999999999998, 100%, 95.1%);
+    --green: hsl(122.19999999999999, 100%, 56.9%);
+
+    /**
+     * Misc
+     */
+
+    --border-width: 0%;
+    --output-opacity: 0;
+}

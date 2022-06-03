@@ -1,0 +1,132 @@
+﻿@import url(./variables.css);
+
+html {
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    font-family: var(--font-family);
+}
+
+::selection {
+    background: var(--green);
+    color: var(--white);
+}
+
+#app {
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5.5rem;
+    background-color: var(--black);
+}
+
+.app--title {
+    font-size: 5rem;
+    margin-bottom: 5.5rem;
+    font-weight: 100;
+    color: var(--white);
+    text-shadow: 0 0 7px var(--white),
+        0 0 10px var(--white),
+        0 0 21px var(--white),
+        0 0 42px var(--green),
+        0 0 82px var(--green),
+        0 0 92px var(--green),
+        0 0 102px var(--green),
+        0 0 151px var(--green);
+}
+
+.app--title span {
+    display: block;
+}
+
+.app--input-container {
+    margin-bottom: 1.25rem;
+}
+
+.app--input-container:after {
+    content: "";
+    display: block;
+    width: var(--border-width);
+    height: 1px;
+    background-color: var(--green);
+    margin-bottom: 1.25rem;
+    transition: cubic-bezier(0.19, 1, 0.22, 1) 0.1s;
+}
+
+#binary-input {
+    background: transparent;
+    border: none;
+    font-family: var(--font-family-monospace);
+    font-size: 2rem;
+    color: var(--green);
+    position: relative;
+
+}
+
+#binary-input:focus-visible {
+    outline: none;
+}
+
+::-webkit-input-placeholder {
+    color: var(--green);
+}
+
+::placeholder {
+    color: var(--green);
+}
+
+::-ms-input-placeholder {
+    color: var(--green);
+}
+
+:-ms-input-placeholder {
+    color: var(--green);
+}
+
+.app--container {
+    text-align: center;
+    padding: 5rem 2rem;
+}
+
+.app--output-container {
+    opacity: var(--output-opacity);
+    transition: opacity 0.5s;
+    font-size: 2.5rem;
+    color: var(--green);
+}
